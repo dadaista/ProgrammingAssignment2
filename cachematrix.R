@@ -36,11 +36,10 @@ cacheSolve <- function(x, ...) {
   i
 }
 
-
- ## just add a small function to test the previous functions
- ## source this code and then invoke test() in the R console
+## test the previous functions
+## just type test() on R console
 test <-function(){
- 
+  
   x<-makeCacheMatrix(x=matrix(data=c(c(1,2,3),c(34,22,3),c(8,3,3)),3,3))
   
   ##here computes
@@ -49,6 +48,11 @@ test <-function(){
   #here gets from cache
   i<-cacheSolve(x)
   
+  #change the matrix
+  x$set(matrix(data=c(c(16,2,39),c(34,22,3),c(8,3,3)),3,3))
+
+  #solve again
+  i<-cacheSolve(x)  
   
 }
 
