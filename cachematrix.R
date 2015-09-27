@@ -38,6 +38,7 @@ cacheSolve <- function(x, ...) {
 
 
  ## just add a small function to test the previous functions
+ ## source this code and then invoke test() in the R console
 test <-function(){
  
   x<-makeCacheMatrix(x=matrix(data=c(c(1,2,3),c(34,22,3),c(8,3,3)),3,3))
